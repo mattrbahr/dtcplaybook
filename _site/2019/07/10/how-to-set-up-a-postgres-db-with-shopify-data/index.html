@@ -11,7 +11,7 @@
 
   <title>
     
-      What's Jekyll? &middot; Shopify Plus Scripts
+      How To Setup A PostgreSQL DB Instance with Shopify Data &middot; Matt Bahr
     
   </title>
 
@@ -67,6 +67,12 @@
     
       
     
+      
+        
+          <a class="sidebar-nav-item" href="/shopify-scripts-resources/">Shopify Script Resources</a>
+        
+      
+    
 
     <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
     <a class="sidebar-nav-item" href="">GitHub project</a>
@@ -87,25 +93,36 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">Shopify Plus Scripts</a>
-            <small>A Repo of Shopify Scripts</small>
+            <a href="/" title="Home">Matt Bahr</a>
+            <small>Thoughts on from Matt Bahr</small>
           </h3>
         </div>
       </div>
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">What's Jekyll?</h1>
-  <span class="post-date">31 Dec 2013</span>
-  <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
+  <h1 class="post-title">How To Setup A PostgreSQL DB Instance with Shopify Data</h1>
+  <span class="post-date">10 Jul 2019</span>
+  <p>At Enquire, we use Postgres as our core database and for anyone who’s spent years in excel… it’s a dream. After a few searches, I realized there was no central resource/how-to for e-commerce analysis in Postgres, especially for Shopify. With Heroku’s database-as-a-service, setting up a Postgres database takes less than a minute and connecting to your Shopify data takes another (thanks to StitchData).</p>
 
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
+<p>For any non-engineer who’s wanted to dive into SQL or Postgres this overview should help. I’ve also included a few queries you can copy and paste to get your started.</p>
 
-<p>It’s an immensely useful tool and one we encourage you to use here with Lanyon.</p>
+<p>If you don’t already, you’ll need to create accounts with the below:</p>
+<ul>
+  <li>Shopify</li>
+  <li>Heroku</li>
+  <li>StitchData</li>
+</ul>
 
-<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
+<p>You’ll also need a Postgres client. I’m a big fan of Postico for Mac. The free version is more than enough to get you started. (Any recommendations for PC client? Let me know and I’ll update here)</p>
+
+<p>Shopify
+Hopefully you already have a Shopify account with order data. If not, you can use the Simple Sample Data Shopify app to populate with mock data (h/t @stuart_abc.)</p>
+
+<p>Heroku
+Create a Heroku account if you don’t already have one (you can select any language in the on-boarding flow). After you’ve created an account, you’ll be presented with the “Create New App” screen–simply follow the prompts to create an app. Once you’re app is created click “Resources” and in the “Add-Ons” search for “Postgres”. Heroku’s free plan unfortunately doesn’t offer enough rows to fully extract your Shopify instance, so you’ll need to select Hobby Basic ($9/month).</p>
+
+<p><img src="assets/heroku-screenshot.png" alt="Heroku Screenshot" class="center-image" /></p>
 
 </div>
 
@@ -115,18 +132,27 @@
     
       <li>
         <h3>
-          <a href="/2014/01/02/introducing-lanyon/">
-            Introducing Lanyon
-            <small>02 Jan 2014</small>
+          <a href="/2019/07/10/e-commerce-pl-management/">
+            E-commerce P&L Management
+            <small>10 Jul 2019</small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/2014/01/01/example-content/">
-            Example content
-            <small>01 Jan 2014</small>
+          <a href="/2019/07/05/bootstrapping-and-process/">
+            Bootstrapping Advice
+            <small>05 Jul 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2019/07/02/do-you-need-a-datawarehouse/">
+            Do you need a datawarehouse?
+            <small>02 Jul 2019</small>
           </a>
         </h3>
       </li>
