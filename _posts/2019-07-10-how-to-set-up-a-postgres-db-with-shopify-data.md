@@ -36,7 +36,7 @@ After you’ve completed these steps, StitchData will begin extracting your Shop
 To do this, simply input your Heroku database credentials after clicking “New Favorite”.
 
 
-![Postico](assets/postico.png){: .center-image }
+![Postico](assets/postico-setup.png){: .center-image }
 
 ## Querying Your Shopify Data
 Once StitchData is done syncing and your DB credentials are entered in Postico, you can start querying your data.

@@ -4,7 +4,7 @@
  <title>Matt Bahr</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-07-10T13:22:44-04:00</updated>
+ <updated>2019-07-10T13:27:58-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matt Bahr</name>
@@ -51,7 +51,7 @@
 
 &lt;p&gt;To do this, simply input your Heroku database credentials after clicking “New Favorite”.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/postico.png&quot; alt=&quot;Postico&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;assets/postico-setup.png&quot; alt=&quot;Postico&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;querying-your-shopify-data&quot;&gt;Querying Your Shopify Data&lt;/h2&gt;
 &lt;p&gt;Once StitchData is done syncing and your DB credentials are entered in Postico, you can start querying your data.&lt;/p&gt;
