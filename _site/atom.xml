@@ -4,7 +4,7 @@
  <title>Matt Bahr</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-07-10T09:14:54-04:00</updated>
+ <updated>2019-07-10T13:22:44-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matt Bahr</name>
@@ -30,13 +30,32 @@
 
 &lt;p&gt;You’ll also need a Postgres client. I’m a big fan of Postico for Mac. The free version is more than enough to get you started. (Any recommendations for PC client? Let me know and I’ll update here)&lt;/p&gt;
 
-&lt;p&gt;Shopify
-Hopefully you already have a Shopify account with order data. If not, you can use the Simple Sample Data Shopify app to populate with mock data (h/t @stuart_abc.)&lt;/p&gt;
+&lt;h2 id=&quot;shopify&quot;&gt;Shopify&lt;/h2&gt;
+&lt;p&gt;Hopefully you already have a Shopify account with order data. If not, you can use the Simple Sample Data Shopify app to populate with mock data (h/t @stuart_abc.)&lt;/p&gt;
 
-&lt;p&gt;Heroku
-Create a Heroku account if you don’t already have one (you can select any language in the on-boarding flow). After you’ve created an account, you’ll be presented with the “Create New App” screen–simply follow the prompts to create an app. Once you’re app is created click “Resources” and in the “Add-Ons” search for “Postgres”. Heroku’s free plan unfortunately doesn’t offer enough rows to fully extract your Shopify instance, so you’ll need to select Hobby Basic ($9/month).&lt;/p&gt;
+&lt;h2 id=&quot;heroku&quot;&gt;Heroku&lt;/h2&gt;
+&lt;p&gt;Create a Heroku account if you don’t already have one (you can select any language in the on-boarding flow). After you’ve created an account, you’ll be presented with the “Create New App” screen–simply follow the prompts to create an app. Once you’re app is created click “Resources” and in the “Add-Ons” search for “Postgres”. Heroku’s free plan unfortunately doesn’t offer enough rows to fully extract your Shopify instance, so you’ll need to select Hobby Basic ($9/month).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/heroku-screenshot.png&quot; alt=&quot;Heroku Screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After you’ve Provisioned your db, select Heroku Postgres in your add-ons list to open your db dashboard. Select “Settings” and click “View Credentials”. You’ll need these in the steps below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/heroku-database.png&quot; alt=&quot;Heroku database&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;stitchdata&quot;&gt;StitchData&lt;/h2&gt;
+&lt;p&gt;Create a StitchData account here and follow the steps to setup your free account. Unless you’re Shopify store is doing considerable volume (100k+ customers), their free version should be enough to get your started.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve connected your Shopify account, select Postgres DB as your destination. To connect your newly created database, simple follow the steps prompted to you and enter your host, database name, username, pw. You can leave the encryption type to None.&lt;/p&gt;
+
+&lt;p&gt;After you’ve completed these steps, StitchData will begin extracting your Shopify data and loading it into your Postgres DB. This process should take 30 minutes to an hour. In the interim, you can install Postico and insert your DB credentials.&lt;/p&gt;
+
+&lt;p&gt;To do this, simply input your Heroku database credentials after clicking “New Favorite”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/postico.png&quot; alt=&quot;Postico&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;querying-your-shopify-data&quot;&gt;Querying Your Shopify Data&lt;/h2&gt;
+&lt;p&gt;Once StitchData is done syncing and your DB credentials are entered in Postico, you can start querying your data.&lt;/p&gt;
+
 </content>
  </entry>
  
