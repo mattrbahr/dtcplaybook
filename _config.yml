@@ -1,0 +1,22 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# relative_permalinks: true
+
+# Setup
+title:               Matt Bahr
+tagline:             'Thoughts on from Matt Bahr'
+description:         'A repository of example Shopify Plus Scripts.'
+url:                 http://shopifyscripts.com
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Matt Bahr
+  url:               https://twitter.com/mattrbahr 
+  email:             mattrbahr@gmail.com
+
+# Custom vars
+version:             1.0.0
