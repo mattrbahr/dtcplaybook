@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Matt Bahr</title>
- <link href="http://localhost:4000//atom.xml" rel="self"/>
- <link href="http://localhost:4000//"/>
- <updated>2019-07-10T14:06:27-04:00</updated>
+ <title>DTC Playbook</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2019-07-10T17:55:41-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matt Bahr</name>
@@ -16,7 +16,7 @@
    <title>How To Setup A PostgreSQL DB Instance with Shopify Data</title>
    <link href="http://localhost:4000/2019/07/10/how-to-set-up-a-postgres-db-with-shopify-data/"/>
    <updated>2019-07-10T00:00:00-04:00</updated>
-   <id>http://localhost:4000//2019/07/10/how-to-set-up-a-postgres-db-with-shopify-data</id>
+   <id>http://localhost:4000/2019/07/10/how-to-set-up-a-postgres-db-with-shopify-data</id>
    <content type="html">&lt;p&gt;At Enquire, we use Postgres as our core database and for anyone who’s spent years in excel… it’s a dream. After a few searches, I realized there was no central resource/how-to for e-commerce analysis in Postgres, especially for Shopify. With Heroku’s database-as-a-service, setting up a Postgres database takes less than a minute and connecting to your Shopify data takes another (thanks to StitchData).&lt;/p&gt;
 
 &lt;p&gt;For any non-engineer who’s wanted to dive into SQL or Postgres this overview should help. I’ve also included a few queries you can copy and paste to get your started.&lt;/p&gt;
@@ -56,33 +56,6 @@
 &lt;h2 id=&quot;querying-your-shopify-data&quot;&gt;Querying Your Shopify Data&lt;/h2&gt;
 &lt;p&gt;Once StitchData is done syncing and your DB credentials are entered in Postico, you can start querying your data.&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>E-commerce P&L Management</title>
-   <link href="http://localhost:4000/2019/07/10/e-commerce-pl-management/"/>
-   <updated>2019-07-10T00:00:00-04:00</updated>
-   <id>http://localhost:4000//2019/07/10/e-commerce-pl-management</id>
-   <content type="html">&lt;p&gt;This is a post about managing a P&amp;amp;L for an e-commerce business.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Bootstrapping Advice</title>
-   <link href="http://localhost:4000/2019/07/05/bootstrapping-and-process/"/>
-   <updated>2019-07-05T00:00:00-04:00</updated>
-   <id>http://localhost:4000//2019/07/05/bootstrapping-and-process</id>
-   <content type="html">&lt;p&gt;Something about Quickbooks and the power of process.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Do you need a datawarehouse?</title>
-   <link href="http://localhost:4000/2019/07/02/do-you-need-a-datawarehouse/"/>
-   <updated>2019-07-02T00:00:00-04:00</updated>
-   <id>http://localhost:4000//2019/07/02/do-you-need-a-datawarehouse</id>
-   <content type="html">&lt;p&gt;Probably not. First principles.&lt;/p&gt;
 </content>
  </entry>
  
